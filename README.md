@@ -1,19 +1,32 @@
 # wechat-menu
 
-pushing wechat custom menu with github and travis-ci
+deploy wechat custom menu automatically with github and travis-ci
 
 [![build status](https://secure.travis-ci.org/rogerz/wechat-menu.png)](http://travis-ci.org/rogerz/wechat-menu)
 
-## Installation
+## Usage
 
-This module is installed via npm:
+Just push a modified `data/menu.json` to update the custom menu
 
-``` bash
-$ npm install wechat-menu
-```
+## Install
 
-## Example Usage
+1. fork this project
+2. switch on travis-ci in [your accounts page](https://travis-ci.org/profile) for your project
+3. remove all the existing secure keys in .travis.yml
+4. encrypt and add your own appID as and appSecret of wechat official account to .travis.yml
+5. create your own `menu.json`
+6. push the changes to github
 
-``` js
-var wechatMenu = require('wechat-menu');
-```
+## Hint
+
+1. include `[ci skip]` in your commit message to skip menu update
+
+## To Do
+
+1. detect failure status
+2. print debug information in travis log (muted stdout for now to protect the secret)
+3. disable building for pull request
+
+### Nice To Have
+
+1. local preview of the menu (low priorty as wechat refreshes the menu in just a few minutes)
