@@ -1,4 +1,8 @@
 language: node_js
 node_js:
-  - "0.8"
-  - "0.10"
+- '0.8'
+- '0.10'
+env:
+  global:
+  - secure: MYSGtEp+KfrkW8xG+2iClAMsxXcsk+1JKmaA1FgOVE/xRJEHKtpXOhd4+O1uoH34NwaIi98iY4asUuH6cFR/Ycm4EFwKEIDbDfMY0sRJmx2BXoC3BlTEATyUd3bvhuxDOHr2Zlb0Yfs+vgQM7JhZ6MlsLz6bzNVVISQ6Hwk3EHE=
+  - secure: LaD1nUd+EU+I4o2ZL8U0lSwNMe62BCkJT5vGUIYgXC8sYr7dPtmbf5lsBRhv3ZORo2YfBFkpHfsJAyUVx5TnvtuGO7as6mWb0ffTfOYNNQqB/uMEaeNCsxp34O1xLsye5qsFVlLccbwfztEM9/pH06UyJR4qDDsePyk+b4WIOuE=
