@@ -1,18 +1,18 @@
 # wechat-menu
 
-deploy wechat custom menu automatically with github and travis-ci
+update wechat custom menu automatically with github and travis-ci
 
 [![build status](https://secure.travis-ci.org/rogerz/wechat-menu.png)](http://travis-ci.org/rogerz/wechat-menu)
 
 ## Usage
 
-Just push a modified `data/menu.json` to update the custom menu
+Edit `data/menu.json` and push.
 
 ## Install
 
 1. fork this project
 2. switch on travis-ci in [your accounts page](https://travis-ci.org/profile) for your project
-3. replace the secure data in `.travis.yml` with your encrypted appID and appSecret. See steps below for details.
+3. replace the secure data in `.travis.yml` with your encrypted appID and appSecret. See steps below for details
 4. create your own `menu.json`
 5. push the changes to github
 
@@ -24,9 +24,15 @@ $ travis encrypt APP_ID=your-app-id --add
 $ travis encrypt APP_SECRET=your-app-secret --add
 ```
 
-## Hint
+## Development
 
-1. include `[ci skip]` in your commit message to skip menu update
+### Run Locally
+
+`npm run-script deploy`
+
+### Skip Building
+
+just include `[ci skip]` in your commit message
 
 ## To Do
 

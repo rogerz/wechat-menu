@@ -4,7 +4,7 @@ node_js:
 before_install:
   - npm install -g webot-cli
 script:
-  - webot menu create --appid=$APP_ID --secret=$APP_SECRET < data/menu.json >/dev/null
+  - npm run-script deploy > /dev/null
 env:
   global:
   - secure: MYSGtEp+KfrkW8xG+2iClAMsxXcsk+1JKmaA1FgOVE/xRJEHKtpXOhd4+O1uoH34NwaIi98iY4asUuH6cFR/Ycm4EFwKEIDbDfMY0sRJmx2BXoC3BlTEATyUd3bvhuxDOHr2Zlb0Yfs+vgQM7JhZ6MlsLz6bzNVVISQ6Hwk3EHE=
