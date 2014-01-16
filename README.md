@@ -12,10 +12,17 @@ Just push a modified `data/menu.json` to update the custom menu
 
 1. fork this project
 2. switch on travis-ci in [your accounts page](https://travis-ci.org/profile) for your project
-3. remove all the existing secure keys in .travis.yml
-4. encrypt and add your own appID as and appSecret of wechat official account to .travis.yml
-5. create your own `menu.json`
-6. push the changes to github
+3. replace the secure data in `.travis.yml` with your encrypted appID and appSecret. See steps below for details.
+4. create your own `menu.json`
+5. push the changes to github
+
+### Encrypt app keys
+
+```bash
+$ gem install travis
+$ travis encrypt APP_ID=your-app-id --add
+$ travis encrypt APP_SECRET=your-app-secret --add
+```
 
 ## Hint
 
